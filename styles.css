@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
     display: flex;
     flex-direction: row;
@@ -35,7 +37,7 @@ body {
     width:100%;
     height: 20vh;
     background-color: rgba(0, 0, 0, .4);
-    margin-top: 40%;
+    margin-top: 25%;
     justify-content: center;
     align-items: center;
     font-family: 'odinFont';
@@ -54,3 +56,42 @@ body {
     color: white;
     font-size: 1vw;
 }
+
+.formSection {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    gap: 20px; 
+}
+
+.textArea {
+    background-color: #F3F3F3 ;
+    margin: 0;
+    padding:0;
+    width: 100%; 
+    height: 35vh;
+    max-height: 315.69px;
+    box-shadow:#F3F3F3;
+}
+
+.textSection {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    width: 70%;
+    min-width: 478.39px;
+    max-width: 1000px;
+    height: 35%;
+    font-size: 3vh;
+    padding-top: 4%;
+    padding-left: 4%;
+    padding-bottom: 4%;
+    flex-wrap: nowrap;
+}
+
+.title {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vh;
+    padding-left: 6%;
+}
+
