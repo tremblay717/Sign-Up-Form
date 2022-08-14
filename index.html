@@ -18,7 +18,7 @@
         </div>
         <div class="leftPartFooter">
             <p>
-                Photo by Halie West on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a>
+                Photo by Halie West on <a href="https://unsplash.com/photos/25xggax4bSA" class="pictureLink">Unsplash</a>
             </p>
         </div>
     </div>
@@ -34,37 +34,37 @@
             <div class="title">
                 <h1>Let's do this!</h1>
             </div>
-            <form action="action_page.php" form="form1">
+            <form action="https://example.com" form="form1" method="post">
                 <div class="form">
                     <div class="inputFields">
                         <ul>
                             <li> <label for="firstName">FIRST NAME</label>
-                                <input type="text" id="firstName" minlength="2"></li>
+                                <input type="text" id="firstName" minlength="2" required></li>
                             <li>
                                 <label for="lastName">LAST NAME</label>
-                                <input type="text" id="lastName">
+                                <input type="text" id="lastName" minlength="2" required>
                             </li>
                             <li>
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email">
+                                <input type="email" id="email" required>
                             </li>
                             <li>
                                 <label for="tel">PHONE NUMBER</label>
-                                <input type="tel" id="tel" minlength="10" maxlength="10">
+                                <input type="tel" id="tel" minlength="10" maxlength="10" required>
                             </li>
 
                             <li>
                                 <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password">
+                                <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
                             </li>
                             <li>
                                 <label for="confirmPassword">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirmPassword" id="confirmPassword">
+                                <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" maxlength="20" required>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <button type="submit" form="form1">Create Account</button>
+                <button type="submit">Create Account</button>
             </form>
         </div>
             <span class="account">
