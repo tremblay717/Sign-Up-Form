@@ -53,3 +53,26 @@ const phone = function () {
     }
 
 }
+
+const emailCheck = function () {
+
+    const regex = "[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$";
+
+
+    if (document.getElementById('email').value.length >=4 && !document.getElementById('email').value.match(regex)) {
+        document.getElementById('email').style.borderColor = 'red';
+    }
+    
+    else if (document.getElementById('email').value.length >= 4 && document.getElementById('email').value.match(regex)) {
+        document.getElementById('email').style.borderColor = 'green';
+    }
+      
+    else if (document.getElementById('email').value.length == 0) {
+        document.getElementById('email').style.borderColor = '#999'
+    }
+
+    else{
+        document.getElementById('email').style.borderColor='#1180FF'
+    }
+
+}
