@@ -5,7 +5,8 @@ body {
     flex-direction: row;
     margin: 0;
     padding: 0;
-    height:100vh;
+    height: 100vh;
+    flex-wrap: wrap;
 }
 
 
@@ -18,30 +19,31 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding:0; 
+    padding: 0;
     width: 35%;
-    height:100%;
+    height: 100%;
     background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
 }
 
 
 .odinLogo {
-    max-width:50%;
-    max-height:90%;
+    max-width: 50%;
+    max-height: 90%;
 }
 
 .blackOut {
     display: flex;
-    width:100%;
+    width: 100%;
     height: 20vh;
     background-color: rgba(0, 0, 0, .4);
     margin-top: 25%;
     justify-content: center;
     align-items: center;
     font-family: 'odinFont';
-    font-size:max(4vw);
+    font-size: max(4vw);
     color: white;
 }
 
@@ -57,21 +59,21 @@ body {
     font-size: 1vw;
 }
 
-.formSection {
+.rightPanel {
     display: flex;
     flex-direction: column;
     width: 65%;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .textArea {
-    background-color: #F3F3F3 ;
+    background-color: #F3F3F3;
     margin: 0;
-    padding:0;
-    width: 100%; 
+    padding: 0;
+    width: 100%;
     height: 35vh;
     max-height: 315.69px;
-    box-shadow:#F3F3F3;
+    box-shadow: #F3F3F3;
 }
 
 .textSection {
@@ -82,8 +84,8 @@ body {
     max-width: 1000px;
     height: 35%;
     font-size: 3vh;
-    padding-top: 4%;
-    padding-left: 4%;
+    padding-top: 6%;
+    padding-left: 3%;
     padding-bottom: 4%;
     flex-wrap: nowrap;
 }
@@ -92,6 +94,85 @@ body {
     display: flex;
     font-family: 'Roboto', sans-serif;
     font-size: 2vh;
-    padding-left: 6%;
+    padding-left: 3%;
 }
 
+.form {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    background-color: white;
+    margin: 0;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    /* padding-left: 1%; */
+    /* border: solid black; */
+    box-shadow: 0px 15px 10px -15px #111;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+label {
+    /* Uniform size & alignment */
+    font-family: 'Roboto';
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+input {
+    display: inline;
+    font-family: 'Roboto';
+    /* Uniform text dsafield size */
+    width: 300px;
+    height: 3.75vh;
+    font-size: 1em;
+    box-sizing: border-box;
+    padding-left:1%;
+    /* Match form field borders */
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin-bottom:15px
+}
+
+input:focus {
+    border: solid rgba(12, 99, 197, 0.979);
+    box-shadow: 0px 15px 10px -15px #111;
+
+}
+
+input,label {
+    display: block;
+    /* padding-top: 20px; */
+}
+
+button {
+    background-color: #596D48;
+    font-family: 'Roboto';
+    color: white;
+    width:18%;
+    height: 4.85vh;
+    font-size: 1.25vw;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 15px 10px -15px #111;
+    cursor: pointer;
+    
+}
+
+.logIn {
+    color: #596D48;
+}
+
+.buttonSection {
+    font-family: 'Roboto';
+    padding-left: 3%;
+    padding-top: 2%;
+    font-size: larger
+}
