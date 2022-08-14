@@ -34,50 +34,45 @@
             <div class="title">
                 <h1>Let's do this!</h1>
             </div>
-            <div class="form">
-                <div class="leftForm">
-                    <form action="post">
+            <form action="action_page.php" form="form1">
+                <div class="form">
+                    <div class="inputFields">
                         <ul>
                             <li> <label for="firstName">FIRST NAME</label>
-                                <input type="text" id="firstName"></li>
+                                <input type="text" id="firstName" minlength="2"></li>
+                            <li>
+                                <label for="lastName">LAST NAME</label>
+                                <input type="text" id="lastName">
+                            </li>
                             <li>
                                 <label for="email">EMAIL</label>
                                 <input type="email" id="email">
                             </li>
                             <li>
+                                <label for="tel">PHONE NUMBER</label>
+                                <input type="tel" id="tel" minlength="10" maxlength="10">
+                            </li>
+
+                            <li>
                                 <label for="password">PASSWORD</label>
                                 <input type="password" name="password" id="password">
-                            </li>
-                            </u>
-                    </form>
-                </div>
-                <div class="rightForm">
-                    <form action="post">
-                        <ul>
-                            <li> <label for="lastName">LAST NAME</label>
-                                <input type="text" id="lastName"></li>
-                            <li>
-                                <label for="tel">PHONE NUMBER</label>
-                                <input type="tel" id="tel">
                             </li>
                             <li>
                                 <label for="confirmPassword">CONFIRM PASSWORD</label>
                                 <input type="password" name="confirmPassword" id="confirmPassword">
                             </li>
-                            </u>
-                    </form>
+                        </ul>
+                    </div>
                 </div>
-
-                <div class="rightForm"></div>
-            </div>
-        <div class="buttonSection">
-            <button>Create Account</button>
-            <span class="Account"><p>Already have an account? <a href="https://www.google.ca/" class="logIn">Log in</a>    </p></span>
+                <button type="submit" form="form1">Create Account</button>
+            </form>
         </div>
-
+            <span class="account">
+                <p>Already have an account? <a href="https://www.google.ca/" class="logIn">Log in</a> </p>
+            </span>
         </div>
+    </div>
+    </div>
 </body>
 
 </html>
-
-    
