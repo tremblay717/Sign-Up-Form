@@ -33,6 +33,7 @@ const check = function () {
 
 const phone = function () {
 
+
     const regex = '^[0-9]*$';
     
     if (document.getElementById('tel').value.length == 10 && !document.getElementById('tel').value.match(regex)) {
@@ -45,6 +46,10 @@ const phone = function () {
       
     else if (document.getElementById('tel').value.length == 0 && document.getElementById('tel').value.length < 10) {
         document.getElementById('tel').style.borderColor = '#999'
+    }
+
+    else{
+        document.getElementById('tel').style.borderColor='#1180FF'
     }
 
 }
