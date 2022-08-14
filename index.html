@@ -11,14 +11,12 @@
 
 <body>
     <div class="leftPart">
-        <!-- <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="plants" class="plant"> -->
         <div class="blackOut">
             <img src="images/odin-lined.png" alt="odinLogo" class="odinLogo">
             <span class="odinText">ODIN</span>
         </div>
         <div class="leftPartFooter">
-            <p>
-                Photo by Halie West on <a href="https://unsplash.com/photos/25xggax4bSA" class="pictureLink">Unsplash</a>
+            <p>Photo by Halie West on <a href="https://unsplash.com/photos/25xggax4bSA" class="pictureLink">Unsplash</a>
             </p>
         </div>
     </div>
@@ -32,47 +30,53 @@
         </div>
         <div class="formSection">
             <div class="title">
-                <h1>Let's do this!</h1>
+                <h1 id="title">Let's do this!</h1>
             </div>
-            <form action="https://example.com" form="form1" method="post">
+            <form action="https://example.com" form="form1" method="post" id="form1">
                 <div class="form">
                     <div class="inputFields">
                         <ul>
                             <li> <label for="firstName">FIRST NAME</label>
-                                <input type="text" id="firstName" minlength="2" required></li>
+                                <input type="text" id="firstName" class='firstName' minlength="2" maxlength="25"
+                                    required pattern="[a-zA-Z'-'\s]*"></li>
                             <li>
                                 <label for="lastName">LAST NAME</label>
-                                <input type="text" id="lastName" minlength="2" required>
+                                <input type="text" id="lastName" minlength="2" maxlength="25" required
+                                    pattern="[a-zA-Z'-'\s]*">
                             </li>
                             <li>
                                 <label for="email">EMAIL</label>
-                                <input type="email" id="email" required>
+                                <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                             </li>
                             <li>
-                                <label for="tel">PHONE NUMBER</label>
-                                <input type="tel" id="tel" minlength="10" maxlength="10" required>
+                                <label for="tel">PHONE NUMBER</label>z
+                                <input type="tel" id="tel" minlength="10" maxlength="10" required pattern="[0-9']*">
                             </li>
-
                             <li>
                                 <label for="password">PASSWORD</label>
-                                <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
+                                <input type="password" name="password" id="password" minlength="8" maxlength="20"
+                                    required onkeyup='check();'>
+                                <span id='message'></span>
                             </li>
                             <li>
                                 <label for="confirmPassword">CONFIRM PASSWORD</label>
-                                <input type="password" name="confirmPassword" id="confirmPassword" minlength="8" maxlength="20" required>
+                                <input type="password" name="confirmPassword" id="confirmPassword" minlength="8"
+                                    maxlength="20" required onkeyup='check();'>
+                                <span id='message'></span>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <button type="submit">Create Account</button>
+                <button type="submit" id="submit" onlick="checkButton();">Create Account</button>
             </form>
         </div>
-            <span class="account">
-                <p>Already have an account? <a href="https://www.google.ca/" class="logIn">Log in</a> </p>
-            </span>
-        </div>
+        <span class="account">
+            <p>Already have an account? <a href="https://www.google.ca/" class="logIn">Log in</a> </p>
+        </span>
     </div>
     </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
