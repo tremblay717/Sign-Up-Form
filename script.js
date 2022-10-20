@@ -76,3 +76,6 @@ const emailCheck = function () {
     }
 
 }
+
+
+// test
